@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notizblock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+        </ul>
+    </nav>
+
+    <h1>Digitales Notizbuch</h1>
+
+    <form id="noteForm">
+        <input type="text" id="noteTitle" placeholder="Titel eingeben" required>
+        <textarea id="noteContent" placeholder="Notiz eingeben" required></textarea>
+        <select id="noteCategory">
+      <option value="beruflich">Beruflich</option>
+      <option value="privat">Privat</option>
+      <option value="geheim">Geheim</option>
+    </select>
+        <button type="submit">Notiz hinzufügen</button>
+    </form>
+
+
+    <input type="text" id="searchKeyword" placeholder="Stichwort eingeben">
+    <button type="button" id="searchButton">Durchsuchen</button>
+
+    <ul id="noteList">
+        <!-- Hier werden die Notizen dynamisch eingefügt -->
+    </ul>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
